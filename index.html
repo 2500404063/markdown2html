@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown测试</title>
+    <link href="./markdown.css" rel="stylesheet">
+    <script src="./markdown.js"></script>
+</head>
+
+<body>
+    <style>
+        #wrap_text {
+            width: 49%;
+            display: inline-block;
+        }
+        
+        #text_md {
+            width: 100%;
+            height: 800px;
+        }
+        
+        #result {
+            width: 50%;
+            height: 800px;
+            float: right;
+            overflow-y: scroll;
+        }
+    </style>
+    <div id="wrap_text">
+        <textarea id="text_md" placeholder="Input here" onkeyup="text_md_onchange();" onload="text_md_onchange();"></textarea>
+    </div>
+    <!-- <div id="result"></div> -->
+    <div id="result" class="markdown_area"></div>
+</body>
+
+</html>
